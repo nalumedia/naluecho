@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Rigs</h1>
+<%= link_to 'New Rig', new_rig_path %><br />
+<div class="w-dyn-list">
+          <div role="list" class="w-dyn-items w-row">
+    <% @rigs.each do |rig| %>
+
+     
+        
+            <div role="listitem" class="w-dyn-item w-col w-col-4">
+              <a href="#" class="photo-link-block w-inline-block"><%= image_tag rig.image.url(:medium) %>
+                <div class="title">
+                <%= rig.name %><br />
+                <%= rig.description %><br />
+                <%= link_to 'Show', rig %> | <%= link_to 'Edit', edit_rig_path(rig) %>  | <%= link_to 'Destroy', rig, method: :delete, data: { confirm: 'Are you sure?' } %>
+                </div>
+              </a>
+            </div>
+        
+
+  
+    <% end %>
+
+    </div>
+    </div>
+
+
+

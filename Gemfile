@@ -7,7 +7,8 @@ ruby '3.0.0'
 gem 'rails', '~> 6.1.1'
 # Use sqlite3 as the database for Active Record
 
-
+gem 'kt-paperclip'
+gem 'aws-sdk'
 gem 'pg'
 gem 'rails_12factor', group: :production
 # Use Puma as the app server
