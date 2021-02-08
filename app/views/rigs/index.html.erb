@@ -11,11 +11,11 @@
             <div role="listitem" class="w-dyn-item w-col w-col-4">
               <a href="#" class="photo-link-block w-inline-block"><%= image_tag rig.image.url(:medium) %>
                 <div class="title">
-                <%= rig.name %><br />
-                <%= rig.description %><br />
+                <%= rig.name %>
                 <%= link_to 'Show', rig %> | <%= link_to 'Edit', edit_rig_path(rig) %>  | <%= link_to 'Destroy', rig, method: :delete, data: { confirm: 'Are you sure?' } %>
                 </div>
               </a>
+              <p><%= rig.description %></p>
             </div>
         
 
